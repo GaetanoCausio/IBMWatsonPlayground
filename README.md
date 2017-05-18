@@ -1,14 +1,16 @@
 # IBMWatsonPlayground
 
-[![Shippable](https://img.shields.io/badge/platform-iOS%20%7C%20WatchOS-lightgrey.svg)]()
+[![Shippable](https://img.shields.io/badge/platform-iOS-blue.svg)]()
 [![Shippable](https://img.shields.io/badge/language-swift-orange.svg)]()
+[![Shippable](https://img.shields.io/badge/packagemanager-carthage-yellow.svg)]()
 [![Shippable](https://img.shields.io/badge/build-passing-green.svg)]()
 [![Shippable](https://img.shields.io/badge/tests-passing-green.svg)]()
-[![Shippable](https://img.shields.io/badge/license-apache%202.0-blue.svg)]()
+[![Shippable](https://img.shields.io/badge/coverage-n%2Fa-green.svg)]()
+[![Shippable](https://img.shields.io/badge/license-apache%202.0-lightgrey.svg)]()
 
 A sample project to demonstrate usage of IBM Watson API's in Swift.   
 
-**--- work in progress ;) ---**
+**--- work in progress ---**
 
 List of IBM Watson API services being used within this project:
 
