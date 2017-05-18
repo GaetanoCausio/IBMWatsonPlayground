@@ -57,4 +57,4 @@ This sample code is licensed under Apache 2.0. Full license text is available in
 [cloud_foundry]: https://github.com/cloudfoundry/cli
 [getting_started]: http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/getting_started/
 [sign_up]: https://apps.admin.ibmcloud.com/manage/trial/bluemix.html?cm_mmc=WatsonDeveloperCloud-_-LandingSiteGetStarted-_-x-_-CreateAnAccountOnBluemixCLI
-[watson_sdk]: http://watson-developer-cloud.github.io/swift-sdk/
+[watson_sdk]: https://github.com/watson-developer-cloud/swift-sdk
