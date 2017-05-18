@@ -62,12 +62,12 @@
 		387CA65A1ECC9E1C00D58D2D /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		387CA6631ECCA50600D58D2D /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = Shared/Protocols.swift; sourceTree = "<group>"; };
 		38E7C1C71EC8C9D200FF8BA8 /* iOS-Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		38E7C1CA1EC8C9D200FF8BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Main/AppDelegate.swift; sourceTree = "<group>"; };
+		38E7C1CA1EC8C9D200FF8BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38E7C1CC1EC8C9D200FF8BA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		38E7C1CF1EC8C9D200FF8BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		38E7C1D11EC8C9D200FF8BA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Assets/Assets.xcassets; sourceTree = "<group>"; };
+		38E7C1D11EC8C9D200FF8BA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38E7C1D41EC8C9D200FF8BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		38E7C1D61EC8C9D200FF8BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Main/Info.plist; sourceTree = "<group>"; };
+		38E7C1D61EC8C9D200FF8BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38E7C1DD1EC8CE3700FF8BA8 /* ConversationV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConversationV1.framework; path = Carthage/Build/iOS/ConversationV1.framework; sourceTree = "<group>"; };
 		38E7C1DE1EC8CE3700FF8BA8 /* DialogV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DialogV1.framework; path = Carthage/Build/iOS/DialogV1.framework; sourceTree = "<group>"; };
 		38E7C1DF1EC8CE3700FF8BA8 /* DiscoveryV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiscoveryV1.framework; path = Carthage/Build/iOS/DiscoveryV1.framework; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 				38E7C1CA1EC8C9D200FF8BA8 /* AppDelegate.swift */,
 				38E7C1D61EC8C9D200FF8BA8 /* Info.plist */,
 			);
-			name = Main;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		387CA65E1ECCA1A400D58D2D /* Views */ = {
@@ -167,7 +167,7 @@
 				38E7C1CE1EC8C9D200FF8BA8 /* Main.storyboard */,
 				38E7C1D31EC8C9D200FF8BA8 /* LaunchScreen.storyboard */,
 			);
-			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		387CA65F1ECCA1C800D58D2D /* Assets */ = {
@@ -175,7 +175,7 @@
 			children = (
 				38E7C1D11EC8C9D200FF8BA8 /* Assets.xcassets */,
 			);
-			name = Assets;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		387CA6601ECCA1F300D58D2D /* Controllers */ = {
@@ -183,14 +183,14 @@
 			children = (
 				38E7C1CC1EC8C9D200FF8BA8 /* ViewController.swift */,
 			);
-			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		387CA6611ECCA26D00D58D2D /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Implementation;
+			path = Implementation;
 			sourceTree = "<group>";
 		};
 		38E7C1BE1EC8C9D200FF8BA8 = {
@@ -227,8 +227,7 @@
 				387CA6601ECCA1F300D58D2D /* Controllers */,
 				387CA65F1ECCA1C800D58D2D /* Assets */,
 			);
-			name = "IBMWatsonPlayground-iOS";
-			path = IBMWatsonPlayground;
+			path = "IBMWatsonPlayground-iOS";
 			sourceTree = "<group>";
 		};
 		38E7C1DC1EC8CE3700FF8BA8 /* Frameworks */ = {
@@ -513,7 +512,6 @@
 				38E7C1CF1EC8C9D200FF8BA8 /* Base */,
 			);
 			name = Main.storyboard;
-			path = Views;
 			sourceTree = "<group>";
 		};
 		38E7C1D31EC8C9D200FF8BA8 /* LaunchScreen.storyboard */ = {
@@ -522,7 +520,6 @@
 				38E7C1D41EC8C9D200FF8BA8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
