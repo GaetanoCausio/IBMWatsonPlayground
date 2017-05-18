@@ -45,10 +45,10 @@ Add your credentials for the IBM Watson Services into `Credentials.swift`.
 
 Dependency Management: this project is using **carthage**, so please install *carthage* and run `carthage update --platform iOS` in the command line to load the IBM Watson SDK for Swift.
 
-More specific information over the IBM Watson Swift SDK can be found [here](watson_sdk)
+More specific information over the IBM Watson Swift SDK can be found [here][watson_sdk]
 ## License
 
-This sample code is licensed under Apache 2.0. Full license text is available in [LICENSE][LICENSE].
+This sample code is licensed under Apache 2.0. Full license text is available in [LICENSE](LICENSE).
 <BR /><BR />
 ***
 *A continuos learning path where passion is the drive.*
