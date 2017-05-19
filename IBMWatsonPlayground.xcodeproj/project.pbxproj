@@ -88,7 +88,6 @@
 		38FE57731ECCAEC200ED2814 /* iOS-ApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-ApplicationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38FE57751ECCAEC200ED2814 /* ToneAnalyzerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneAnalyzerUITests.swift; sourceTree = "<group>"; };
 		38FE57771ECCAEC200ED2814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		38FE577E1ECCEF4700ED2814 /* GarbageCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GarbageCollection.swift; path = Private/GarbageCollection.swift; sourceTree = "<group>"; };
 		38FE57811ECD705C00ED2814 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		38FE57821ECD705C00ED2814 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				387CA6581ECC9DD200D58D2D /* PersonalCredentials.swift */,
-				38FE577E1ECCEF4700ED2814 /* GarbageCollection.swift */,
 			);
 			name = Private;
 			sourceTree = "<group>";
