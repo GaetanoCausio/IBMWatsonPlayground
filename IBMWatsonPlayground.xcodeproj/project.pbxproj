@@ -626,7 +626,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = IBMWatsonPlayground/Main/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/IBMWatsonPlayground-iOS/Main/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gaetanocausio.IBMWatsonPlayground;
@@ -644,7 +644,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = IBMWatsonPlayground/Main/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/IBMWatsonPlayground-iOS/Main/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gaetanocausio.IBMWatsonPlayground;
