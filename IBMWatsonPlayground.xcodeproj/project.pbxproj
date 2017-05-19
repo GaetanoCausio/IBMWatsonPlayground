@@ -67,7 +67,7 @@
 		38E7C1CF1EC8C9D200FF8BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38E7C1D11EC8C9D200FF8BA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38E7C1D41EC8C9D200FF8BA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		38E7C1D61EC8C9D200FF8BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		38E7C1D61EC8C9D200FF8BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38E7C1DD1EC8CE3700FF8BA8 /* ConversationV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConversationV1.framework; path = Carthage/Build/iOS/ConversationV1.framework; sourceTree = "<group>"; };
 		38E7C1DE1EC8CE3700FF8BA8 /* DialogV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DialogV1.framework; path = Carthage/Build/iOS/DialogV1.framework; sourceTree = "<group>"; };
 		38E7C1DF1EC8CE3700FF8BA8 /* DiscoveryV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiscoveryV1.framework; path = Carthage/Build/iOS/DiscoveryV1.framework; sourceTree = "<group>"; };
@@ -154,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				38E7C1CA1EC8C9D200FF8BA8 /* AppDelegate.swift */,
-				38E7C1D61EC8C9D200FF8BA8 /* Info.plist */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -219,6 +218,7 @@
 		38E7C1C91EC8C9D200FF8BA8 /* IBMWatsonPlayground-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				38E7C1D61EC8C9D200FF8BA8 /* Info.plist */,
 				387CA65D1ECCA18700D58D2D /* Main */,
 				387CA6611ECCA26D00D58D2D /* Implementation */,
 				387CA65E1ECCA1A400D58D2D /* Views */,
@@ -626,7 +626,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/IBMWatsonPlayground-iOS/Info.plist";
+				INFOPLIST_FILE = "IBMWatsonPlayground-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gaetanocausio.IBMWatsonPlayground;
@@ -644,7 +644,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/IBMWatsonPlayground-iOS/Info.plist";
+				INFOPLIST_FILE = "IBMWatsonPlayground-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gaetanocausio.IBMWatsonPlayground;
