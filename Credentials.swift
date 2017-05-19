@@ -13,6 +13,8 @@ import Foundation
  */
 
 struct Credentials: WatsonCredentials {
+
+// Please uncomment and specify your IBM Watson API credentials !!!!!!!!!!!!!
     
 //    static let naturalLanguageUnderstanding = WatsonServiceCredentials(
 //        version: watsonDefaultVersion, // specify a date (YYYY-MM-DD) to work on a specific API version
