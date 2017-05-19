@@ -53,10 +53,10 @@ More specific information over the IBM Watson Swift SDK can be found here: [IBM 
 
 ## Usefull Links
 
-[IBM Bluemix][bluemix]
-[IBM Watson API Documentation](https://www.ibm.com/watson/developercloud/services-catalog.html)
-[IBM Watson Swift SDK][watson_sdk]
-[Carthage](https://github.com/Carthage/)
+[IBM Bluemix][bluemix]    
+[IBM Watson API Documentation](https://www.ibm.com/watson/developercloud/services-catalog.html)    
+[IBM Watson Swift SDK][watson_sdk]    
+[Carthage](https://github.com/Carthage/Carthage)    
 
 ## License
 
