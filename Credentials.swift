@@ -14,7 +14,7 @@ import Foundation
 
 struct Credentials: WatsonCredentials {
     
-    // TODO: Please conform to protocol by uncommenting code below so to specify your IBM Watson API credentials:
+    //TODO: Please conform to protocol by uncommenting code below so to specify your IBM Watson API credentials:
     
 //    static let naturalLanguageUnderstanding = WatsonServiceCredentials(
 //        version: watsonDefaultVersion, // specify a date (YYYY-MM-DD) to work on a specific API version
