@@ -1,0 +1,26 @@
+ 
+    _____ __  __ _____   ____  _____ _______       _   _ _______   _
+   |_   _|  \/  |  __ \ / __ \|  __ \__   __|/\   | \ | |__   __| | |
+     | | | \  / | |__) | |  | | |__) | | |  /  \  |  \| |  | |    | |
+     | | | |\/| |  ___/| |  | |  _  /  | | / /\ \ | . ` |  | |    | |
+    _| |_| |  | | |    | |__| | | \ \  | |/ ____ \| |\  |  | |    |_|
+   |_____|_|  |_|_|     \____/|_|  \_\ |_/_/    \_\_| \_|  |_|    (_)
+
+   PLEASE, FOLLOW INSTRUCTIONS BELOW TO SETUP XCODE BEFORE COMPILING!
+   ------------------------------------------------------------------
+
+
+1. Remove folder group "Private" and all of its content from the Xcode project
+   as this contains references to files with personal data not published to Github
+
+
+2. Add your credentials for the IBM Watson Services into "Credentials.swift"
+
+
+3. From the terminal run the following command to load the IBM Watson SDK:
+
+   carthage update --platform iOS
+
+
+
+

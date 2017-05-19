@@ -8,7 +8,7 @@
 [![Shippable](https://img.shields.io/badge/coverage-n%2Fa-green.svg)]()
 [![Shippable](https://img.shields.io/badge/license-apache%202.0-lightgrey.svg)]()
 
-A sample project to demonstrate usage of IBM Watson API's in Swift.   
+A sample project to demonstrate usage of IBM Watson API's in an iOS Swift application.   
 
 **--- work in progress ---**
 

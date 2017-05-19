@@ -58,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		386F5C2C1ECEDC7500D1F054 /* README_FIRST */ = {isa = PBXFileReference; lastKnownFileType = text; path = README_FIRST; sourceTree = "<group>"; };
 		387CA6581ECC9DD200D58D2D /* PersonalCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalCredentials.swift; path = Private/PersonalCredentials.swift; sourceTree = "<group>"; };
 		387CA65A1ECC9E1C00D58D2D /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		387CA6631ECCA50600D58D2D /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = Shared/Protocols.swift; sourceTree = "<group>"; };
@@ -193,6 +194,7 @@
 		38E7C1BE1EC8C9D200FF8BA8 = {
 			isa = PBXGroup;
 			children = (
+				386F5C2C1ECEDC7500D1F054 /* README_FIRST */,
 				38FE57811ECD705C00ED2814 /* README.md */,
 				38FE57821ECD705C00ED2814 /* LICENSE */,
 				387CA65A1ECC9E1C00D58D2D /* Credentials.swift */,
