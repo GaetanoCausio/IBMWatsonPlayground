@@ -35,17 +35,29 @@ legenda (availability in this project):
 w : work in progress, not yet implemented / tested      
 x : completed and tested
 
-
-
 ## Getting Started
 
-You need to have a **Bluemix** account to be able to use Watson services, you can request one [here][sign_up].
+You need to have a **Bluemix** account to be able to use Watson services, you can request one here: [Bluemix Signup][bluemix].
 
-Add your credentials for the IBM Watson Services into `Credentials.swift`.
+Dependency Management: this project is using **carthage**, so please install *carthage* if you don't have it yet by following instructions on this link: [Carthage Install][carthage_setup].
 
-Dependency Management: this project is using **carthage**, so please install *carthage* and run `carthage update --platform iOS` in the command line to load the IBM Watson SDK for Swift.
+More specific information over the IBM Watson Swift SDK can be found here: [IBM Watson Swift SDK][watson_sdk]
 
-More specific information over the IBM Watson Swift SDK can be found [here][watson_sdk]
+## Xcode Project Setup
+
+1. Run `carthage update --platform iOS` in the command line to load the IBM Watson SDK for Swift
+
+2. Remove folder group `Private` from the project as this contains references to files with personal data not published to Github.
+
+3. Add your credentials for the IBM Watson Services into `Credentials.swift`.
+
+## Usefull Links
+
+[IBM Bluemix][bluemix]
+[IBM Watson API Documentation](https://www.ibm.com/watson/developercloud/services-catalog.html)
+[IBM Watson Swift SDK][watson_sdk]
+[Carthage](https://github.com/Carthage/)
+
 ## License
 
 This sample code is licensed under Apache 2.0. Full license text is available in [LICENSE](LICENSE).
@@ -53,8 +65,7 @@ This sample code is licensed under Apache 2.0. Full license text is available in
 ***
 *A continuos learning path where passion is the drive.*
 
-[service_url]: http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/text-to-speech.html
-[cloud_foundry]: https://github.com/cloudfoundry/cli
 [getting_started]: http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/doc/getting_started/
-[sign_up]: https://apps.admin.ibmcloud.com/manage/trial/bluemix.html?cm_mmc=WatsonDeveloperCloud-_-LandingSiteGetStarted-_-x-_-CreateAnAccountOnBluemixCLI
+[bluemix]: https://bluemix.net
 [watson_sdk]: https://github.com/watson-developer-cloud/swift-sdk
+[carthage_setup]: https://github.com/Carthage/Carthage/releases
