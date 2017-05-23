@@ -10,6 +10,15 @@
 		387CA6591ECC9DD200D58D2D /* PersonalCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387CA6581ECC9DD200D58D2D /* PersonalCredentials.swift */; };
 		387CA65B1ECC9E1C00D58D2D /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387CA65A1ECC9E1C00D58D2D /* Credentials.swift */; };
 		387CA6641ECCA50600D58D2D /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387CA6631ECCA50600D58D2D /* Protocols.swift */; };
+		38C7861C1ED4D7160077C1D2 /* ToneAnalysisInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7861B1ED4D7160077C1D2 /* ToneAnalysisInterface.swift */; };
+		38C7861D1ED4D7160077C1D2 /* ToneAnalysisInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7861B1ED4D7160077C1D2 /* ToneAnalysisInterface.swift */; };
+		38C7861E1ED4D7160077C1D2 /* ToneAnalysisInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7861B1ED4D7160077C1D2 /* ToneAnalysisInterface.swift */; };
+		38C786201ED4E0E60077C1D2 /* GenericModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7861F1ED4E0E60077C1D2 /* GenericModels.swift */; };
+		38C786211ED4E0E60077C1D2 /* GenericModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7861F1ED4E0E60077C1D2 /* GenericModels.swift */; };
+		38C786221ED4E0E60077C1D2 /* GenericModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7861F1ED4E0E60077C1D2 /* GenericModels.swift */; };
+		38E456951ED2BCB7003952F3 /* ToneAnalysisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E456941ED2BCB7003952F3 /* ToneAnalysisModel.swift */; };
+		38E456961ED2BCB7003952F3 /* ToneAnalysisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E456941ED2BCB7003952F3 /* ToneAnalysisModel.swift */; };
+		38E456971ED2BCB7003952F3 /* ToneAnalysisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E456941ED2BCB7003952F3 /* ToneAnalysisModel.swift */; };
 		38E7C1CB1EC8C9D200FF8BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7C1CA1EC8C9D200FF8BA8 /* AppDelegate.swift */; };
 		38E7C1CD1EC8C9D200FF8BA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7C1CC1EC8C9D200FF8BA8 /* ViewController.swift */; };
 		38E7C1D01EC8C9D200FF8BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38E7C1CE1EC8C9D200FF8BA8 /* Main.storyboard */; };
@@ -62,6 +71,9 @@
 		387CA6581ECC9DD200D58D2D /* PersonalCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalCredentials.swift; path = Private/PersonalCredentials.swift; sourceTree = "<group>"; };
 		387CA65A1ECC9E1C00D58D2D /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		387CA6631ECCA50600D58D2D /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = Shared/Protocols.swift; sourceTree = "<group>"; };
+		38C7861B1ED4D7160077C1D2 /* ToneAnalysisInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToneAnalysisInterface.swift; path = Services/ToneAnalysisInterface.swift; sourceTree = "<group>"; };
+		38C7861F1ED4E0E60077C1D2 /* GenericModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GenericModels.swift; path = Models/GenericModels.swift; sourceTree = "<group>"; };
+		38E456941ED2BCB7003952F3 /* ToneAnalysisModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToneAnalysisModel.swift; path = Models/ToneAnalysisModel.swift; sourceTree = "<group>"; };
 		38E7C1C71EC8C9D200FF8BA8 /* iOS-Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38E7C1CA1EC8C9D200FF8BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38E7C1CC1EC8C9D200FF8BA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,8 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				387CA6631ECCA50600D58D2D /* Protocols.swift */,
-				38FE577F1ECD6DFD00ED2814 /* Models */,
-				38FE57801ECD6E1800ED2814 /* Services */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -198,6 +208,8 @@
 				38FE57811ECD705C00ED2814 /* README.md */,
 				38FE57821ECD705C00ED2814 /* LICENSE */,
 				387CA65A1ECC9E1C00D58D2D /* Credentials.swift */,
+				38FE57801ECD6E1800ED2814 /* Services */,
+				38FE577F1ECD6DFD00ED2814 /* Models */,
 				387CA65C1ECC9E3E00D58D2D /* Shared */,
 				387CA6351ECAD2D400D58D2D /* Private */,
 				38E7C1C91EC8C9D200FF8BA8 /* IBMWatsonPlayground-iOS */,
@@ -281,6 +293,8 @@
 		38FE577F1ECD6DFD00ED2814 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				38C7861F1ED4E0E60077C1D2 /* GenericModels.swift */,
+				38E456941ED2BCB7003952F3 /* ToneAnalysisModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -288,6 +302,7 @@
 		38FE57801ECD6E1800ED2814 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				38C7861B1ED4D7160077C1D2 /* ToneAnalysisInterface.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -465,6 +480,9 @@
 				38E7C1CB1EC8C9D200FF8BA8 /* AppDelegate.swift in Sources */,
 				387CA65B1ECC9E1C00D58D2D /* Credentials.swift in Sources */,
 				387CA6591ECC9DD200D58D2D /* PersonalCredentials.swift in Sources */,
+				38C7861C1ED4D7160077C1D2 /* ToneAnalysisInterface.swift in Sources */,
+				38E456951ED2BCB7003952F3 /* ToneAnalysisModel.swift in Sources */,
+				38C786201ED4E0E60077C1D2 /* GenericModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +494,9 @@
 				38FE57851ECDF72A00ED2814 /* Credentials.swift in Sources */,
 				38FE57891ECDF73900ED2814 /* PersonalCredentials.swift in Sources */,
 				38FE57681ECCAEA900ED2814 /* ToneAnalyzerTests.swift in Sources */,
+				38E456961ED2BCB7003952F3 /* ToneAnalysisModel.swift in Sources */,
+				38C7861D1ED4D7160077C1D2 /* ToneAnalysisInterface.swift in Sources */,
+				38C786211ED4E0E60077C1D2 /* GenericModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +508,9 @@
 				38FE57861ECDF72B00ED2814 /* Credentials.swift in Sources */,
 				38FE578A1ECDF73A00ED2814 /* PersonalCredentials.swift in Sources */,
 				38FE57761ECCAEC200ED2814 /* ToneAnalyzerUITests.swift in Sources */,
+				38E456971ED2BCB7003952F3 /* ToneAnalysisModel.swift in Sources */,
+				38C7861E1ED4D7160077C1D2 /* ToneAnalysisInterface.swift in Sources */,
+				38C786221ED4E0E60077C1D2 /* GenericModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

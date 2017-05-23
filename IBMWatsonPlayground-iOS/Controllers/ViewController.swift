@@ -15,6 +15,8 @@ class ViewController: UIViewController {
         print("ERROR: \(error)")
     }
 
+    var test: ToneAnalysis?
+    
     override func viewDidLoad() {
     
         // just a quick test to check everything locally and from github is correctly working
@@ -24,7 +26,8 @@ class ViewController: UIViewController {
             "the past three quarters for our data analytics product suite. We have a " +
             "competitive data analytics product suite in the industry. But we need " +
         "to do our job selling it! "
-
+        
+        
         let toneAnalyzer = ToneAnalyzer(username: Credentials.toneAnalyzer.username!,
                                     password: Credentials.toneAnalyzer.password!,
                                     version: Credentials.toneAnalyzer.version!)
