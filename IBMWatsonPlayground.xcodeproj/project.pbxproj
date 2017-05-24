@@ -73,6 +73,7 @@
 		387CA6631ECCA50600D58D2D /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = Shared/Protocols.swift; sourceTree = "<group>"; };
 		38C7861B1ED4D7160077C1D2 /* ToneAnalysisInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToneAnalysisInterface.swift; path = Services/ToneAnalysisInterface.swift; sourceTree = "<group>"; };
 		38C7861F1ED4E0E60077C1D2 /* GenericModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GenericModels.swift; path = Models/GenericModels.swift; sourceTree = "<group>"; };
+		38C786231ED5683F0077C1D2 /* CodingHelper */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CodingHelper; path = Private/CodingHelper; sourceTree = "<group>"; };
 		38E456941ED2BCB7003952F3 /* ToneAnalysisModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToneAnalysisModel.swift; path = Models/ToneAnalysisModel.swift; sourceTree = "<group>"; };
 		38E7C1C71EC8C9D200FF8BA8 /* iOS-Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38E7C1CA1EC8C9D200FF8BA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				387CA6581ECC9DD200D58D2D /* PersonalCredentials.swift */,
+				38C786231ED5683F0077C1D2 /* CodingHelper */,
 			);
 			name = Private;
 			sourceTree = "<group>";
