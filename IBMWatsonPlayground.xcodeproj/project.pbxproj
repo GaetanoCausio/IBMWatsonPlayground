@@ -7,18 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38516A891F0786D30001F3A6 /* OfflineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C32B241F055D5200387CE9 /* OfflineData.swift */; };
+		38516A8A1F0786D30001F3A6 /* OfflineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C32B241F055D5200387CE9 /* OfflineData.swift */; };
 		387CA6591ECC9DD200D58D2D /* PersonalCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387CA6581ECC9DD200D58D2D /* PersonalCredentials.swift */; };
 		387CA65B1ECC9E1C00D58D2D /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387CA65A1ECC9E1C00D58D2D /* Credentials.swift */; };
 		387CA6641ECCA50600D58D2D /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387CA6631ECCA50600D58D2D /* Protocols.swift */; };
-		38C7861C1ED4D7160077C1D2 /* ToneAnalysisInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7861B1ED4D7160077C1D2 /* ToneAnalysisInterface.swift */; };
-		38C7861D1ED4D7160077C1D2 /* ToneAnalysisInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7861B1ED4D7160077C1D2 /* ToneAnalysisInterface.swift */; };
-		38C7861E1ED4D7160077C1D2 /* ToneAnalysisInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7861B1ED4D7160077C1D2 /* ToneAnalysisInterface.swift */; };
-		38C786201ED4E0E60077C1D2 /* GenericModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7861F1ED4E0E60077C1D2 /* GenericModels.swift */; };
-		38C786211ED4E0E60077C1D2 /* GenericModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7861F1ED4E0E60077C1D2 /* GenericModels.swift */; };
-		38C786221ED4E0E60077C1D2 /* GenericModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7861F1ED4E0E60077C1D2 /* GenericModels.swift */; };
-		38E456951ED2BCB7003952F3 /* ToneAnalysisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E456941ED2BCB7003952F3 /* ToneAnalysisModel.swift */; };
-		38E456961ED2BCB7003952F3 /* ToneAnalysisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E456941ED2BCB7003952F3 /* ToneAnalysisModel.swift */; };
-		38E456971ED2BCB7003952F3 /* ToneAnalysisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E456941ED2BCB7003952F3 /* ToneAnalysisModel.swift */; };
+		38B4B40E1F07A75800BAAC68 /* ToneAnalyzerV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1E91EC8CE3700FF8BA8 /* ToneAnalyzerV3.framework */; };
+		38B4B40F1F07A75C00BAAC68 /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1EA1EC8CE3700FF8BA8 /* VisualRecognitionV3.framework */; };
+		38B4B4101F07A75D00BAAC68 /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1EA1EC8CE3700FF8BA8 /* VisualRecognitionV3.framework */; };
+		38B4B4111F07A76100BAAC68 /* ConversationV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1DD1EC8CE3700FF8BA8 /* ConversationV1.framework */; };
+		38B4B4121F07A76200BAAC68 /* ConversationV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1DD1EC8CE3700FF8BA8 /* ConversationV1.framework */; };
+		38B4B4131F07A76500BAAC68 /* DialogV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1DE1EC8CE3700FF8BA8 /* DialogV1.framework */; };
+		38B4B4141F07A76500BAAC68 /* DialogV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1DE1EC8CE3700FF8BA8 /* DialogV1.framework */; };
+		38B4B4151F07A76800BAAC68 /* DiscoveryV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1DF1EC8CE3700FF8BA8 /* DiscoveryV1.framework */; };
+		38B4B4161F07A76900BAAC68 /* DiscoveryV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1DF1EC8CE3700FF8BA8 /* DiscoveryV1.framework */; };
+		38B4B4171F07A76C00BAAC68 /* DocumentConversionV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1E01EC8CE3700FF8BA8 /* DocumentConversionV1.framework */; };
+		38B4B4181F07A76C00BAAC68 /* DocumentConversionV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1E01EC8CE3700FF8BA8 /* DocumentConversionV1.framework */; };
+		38B4B4191F07A76F00BAAC68 /* LanguageTranslatorV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1E11EC8CE3700FF8BA8 /* LanguageTranslatorV2.framework */; };
+		38B4B41A1F07A76F00BAAC68 /* LanguageTranslatorV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1E11EC8CE3700FF8BA8 /* LanguageTranslatorV2.framework */; };
+		38B4B41B1F07A77200BAAC68 /* NaturalLanguageClassifierV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1E21EC8CE3700FF8BA8 /* NaturalLanguageClassifierV1.framework */; };
+		38B4B41C1F07A77300BAAC68 /* NaturalLanguageClassifierV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1E21EC8CE3700FF8BA8 /* NaturalLanguageClassifierV1.framework */; };
+		38B4B41D1F07A77500BAAC68 /* NaturalLanguageUnderstandingV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1E31EC8CE3700FF8BA8 /* NaturalLanguageUnderstandingV1.framework */; };
+		38B4B41E1F07A77600BAAC68 /* NaturalLanguageUnderstandingV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1E31EC8CE3700FF8BA8 /* NaturalLanguageUnderstandingV1.framework */; };
+		38B4B41F1F07A77900BAAC68 /* PersonalityInsightsV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1E41EC8CE3700FF8BA8 /* PersonalityInsightsV3.framework */; };
+		38B4B4201F07A77900BAAC68 /* PersonalityInsightsV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1E41EC8CE3700FF8BA8 /* PersonalityInsightsV3.framework */; };
+		38B4B4211F07A77C00BAAC68 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1E51EC8CE3700FF8BA8 /* RestKit.framework */; };
+		38B4B4221F07A77C00BAAC68 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1E51EC8CE3700FF8BA8 /* RestKit.framework */; };
+		38B4B4231F07A77F00BAAC68 /* RetrieveAndRankV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1E61EC8CE3700FF8BA8 /* RetrieveAndRankV1.framework */; };
+		38B4B4241F07A77F00BAAC68 /* RetrieveAndRankV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1E61EC8CE3700FF8BA8 /* RetrieveAndRankV1.framework */; };
+		38B4B4251F07A78200BAAC68 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1E71EC8CE3700FF8BA8 /* SpeechToTextV1.framework */; };
+		38B4B4261F07A78300BAAC68 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1E71EC8CE3700FF8BA8 /* SpeechToTextV1.framework */; };
+		38B4B4271F07A78600BAAC68 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1E81EC8CE3700FF8BA8 /* TextToSpeechV1.framework */; };
+		38B4B4281F07A78600BAAC68 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E7C1E81EC8CE3700FF8BA8 /* TextToSpeechV1.framework */; };
+		38C32B251F055D5200387CE9 /* OfflineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C32B241F055D5200387CE9 /* OfflineData.swift */; };
+		38C32B261F057CB800387CE9 /* ToneAnalysisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E456941ED2BCB7003952F3 /* ToneAnalysisModel.swift */; };
+		38C32B271F057CB900387CE9 /* ToneAnalysisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E456941ED2BCB7003952F3 /* ToneAnalysisModel.swift */; };
+		38C32B281F057CBA00387CE9 /* ToneAnalysisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E456941ED2BCB7003952F3 /* ToneAnalysisModel.swift */; };
+		38C786201ED4E0E60077C1D2 /* GenericModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7861F1ED4E0E60077C1D2 /* GenericModel.swift */; };
+		38C786211ED4E0E60077C1D2 /* GenericModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7861F1ED4E0E60077C1D2 /* GenericModel.swift */; };
+		38C786221ED4E0E60077C1D2 /* GenericModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C7861F1ED4E0E60077C1D2 /* GenericModel.swift */; };
 		38E7C1CB1EC8C9D200FF8BA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7C1CA1EC8C9D200FF8BA8 /* AppDelegate.swift */; };
 		38E7C1CD1EC8C9D200FF8BA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7C1CC1EC8C9D200FF8BA8 /* ViewController.swift */; };
 		38E7C1D01EC8C9D200FF8BA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38E7C1CE1EC8C9D200FF8BA8 /* Main.storyboard */; };
@@ -71,8 +98,8 @@
 		387CA6581ECC9DD200D58D2D /* PersonalCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalCredentials.swift; path = Private/PersonalCredentials.swift; sourceTree = "<group>"; };
 		387CA65A1ECC9E1C00D58D2D /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		387CA6631ECCA50600D58D2D /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = Shared/Protocols.swift; sourceTree = "<group>"; };
-		38C7861B1ED4D7160077C1D2 /* ToneAnalysisInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToneAnalysisInterface.swift; path = Services/ToneAnalysisInterface.swift; sourceTree = "<group>"; };
-		38C7861F1ED4E0E60077C1D2 /* GenericModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GenericModels.swift; path = Models/GenericModels.swift; sourceTree = "<group>"; };
+		38C32B241F055D5200387CE9 /* OfflineData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OfflineData.swift; path = Models/OfflineData.swift; sourceTree = "<group>"; };
+		38C7861F1ED4E0E60077C1D2 /* GenericModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GenericModel.swift; path = Models/GenericModel.swift; sourceTree = "<group>"; };
 		38C786231ED5683F0077C1D2 /* CodingHelper */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CodingHelper; path = Private/CodingHelper; sourceTree = "<group>"; };
 		38E456941ED2BCB7003952F3 /* ToneAnalysisModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToneAnalysisModel.swift; path = Models/ToneAnalysisModel.swift; sourceTree = "<group>"; };
 		38E7C1C71EC8C9D200FF8BA8 /* iOS-Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,7 +159,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38B4B41B1F07A77200BAAC68 /* NaturalLanguageClassifierV1.framework in Frameworks */,
+				38B4B4171F07A76C00BAAC68 /* DocumentConversionV1.framework in Frameworks */,
+				38B4B41D1F07A77500BAAC68 /* NaturalLanguageUnderstandingV1.framework in Frameworks */,
+				38B4B4231F07A77F00BAAC68 /* RetrieveAndRankV1.framework in Frameworks */,
+				38B4B4251F07A78200BAAC68 /* SpeechToTextV1.framework in Frameworks */,
+				38B4B41F1F07A77900BAAC68 /* PersonalityInsightsV3.framework in Frameworks */,
 				38FE578B1ECDF84200ED2814 /* ToneAnalyzerV3.framework in Frameworks */,
+				38B4B4131F07A76500BAAC68 /* DialogV1.framework in Frameworks */,
+				38B4B4191F07A76F00BAAC68 /* LanguageTranslatorV2.framework in Frameworks */,
+				38B4B4111F07A76100BAAC68 /* ConversationV1.framework in Frameworks */,
+				38B4B4151F07A76800BAAC68 /* DiscoveryV1.framework in Frameworks */,
+				38B4B4211F07A77C00BAAC68 /* RestKit.framework in Frameworks */,
+				38B4B40F1F07A75C00BAAC68 /* VisualRecognitionV3.framework in Frameworks */,
+				38B4B4271F07A78600BAAC68 /* TextToSpeechV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +180,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38B4B41C1F07A77300BAAC68 /* NaturalLanguageClassifierV1.framework in Frameworks */,
+				38B4B4181F07A76C00BAAC68 /* DocumentConversionV1.framework in Frameworks */,
+				38B4B41E1F07A77600BAAC68 /* NaturalLanguageUnderstandingV1.framework in Frameworks */,
+				38B4B4241F07A77F00BAAC68 /* RetrieveAndRankV1.framework in Frameworks */,
+				38B4B4261F07A78300BAAC68 /* SpeechToTextV1.framework in Frameworks */,
+				38B4B4201F07A77900BAAC68 /* PersonalityInsightsV3.framework in Frameworks */,
+				38B4B40E1F07A75800BAAC68 /* ToneAnalyzerV3.framework in Frameworks */,
+				38B4B4141F07A76500BAAC68 /* DialogV1.framework in Frameworks */,
+				38B4B41A1F07A76F00BAAC68 /* LanguageTranslatorV2.framework in Frameworks */,
+				38B4B4121F07A76200BAAC68 /* ConversationV1.framework in Frameworks */,
+				38B4B4161F07A76900BAAC68 /* DiscoveryV1.framework in Frameworks */,
+				38B4B4221F07A77C00BAAC68 /* RestKit.framework in Frameworks */,
+				38B4B4101F07A75D00BAAC68 /* VisualRecognitionV3.framework in Frameworks */,
+				38B4B4281F07A78600BAAC68 /* TextToSpeechV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,8 +349,9 @@
 		38FE577F1ECD6DFD00ED2814 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				38C7861F1ED4E0E60077C1D2 /* GenericModels.swift */,
+				38C7861F1ED4E0E60077C1D2 /* GenericModel.swift */,
 				38E456941ED2BCB7003952F3 /* ToneAnalysisModel.swift */,
+				38C32B241F055D5200387CE9 /* OfflineData.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -304,7 +359,6 @@
 		38FE57801ECD6E1800ED2814 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				38C7861B1ED4D7160077C1D2 /* ToneAnalysisInterface.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -480,11 +534,11 @@
 				387CA6641ECCA50600D58D2D /* Protocols.swift in Sources */,
 				38E7C1CD1EC8C9D200FF8BA8 /* ViewController.swift in Sources */,
 				38E7C1CB1EC8C9D200FF8BA8 /* AppDelegate.swift in Sources */,
+				38C32B251F055D5200387CE9 /* OfflineData.swift in Sources */,
 				387CA65B1ECC9E1C00D58D2D /* Credentials.swift in Sources */,
+				38C32B261F057CB800387CE9 /* ToneAnalysisModel.swift in Sources */,
 				387CA6591ECC9DD200D58D2D /* PersonalCredentials.swift in Sources */,
-				38C7861C1ED4D7160077C1D2 /* ToneAnalysisInterface.swift in Sources */,
-				38E456951ED2BCB7003952F3 /* ToneAnalysisModel.swift in Sources */,
-				38C786201ED4E0E60077C1D2 /* GenericModels.swift in Sources */,
+				38C786201ED4E0E60077C1D2 /* GenericModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,13 +546,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38516A891F0786D30001F3A6 /* OfflineData.swift in Sources */,
 				38FE57871ECDF73000ED2814 /* Protocols.swift in Sources */,
 				38FE57851ECDF72A00ED2814 /* Credentials.swift in Sources */,
 				38FE57891ECDF73900ED2814 /* PersonalCredentials.swift in Sources */,
+				38C32B271F057CB900387CE9 /* ToneAnalysisModel.swift in Sources */,
 				38FE57681ECCAEA900ED2814 /* ToneAnalyzerTests.swift in Sources */,
-				38E456961ED2BCB7003952F3 /* ToneAnalysisModel.swift in Sources */,
-				38C7861D1ED4D7160077C1D2 /* ToneAnalysisInterface.swift in Sources */,
-				38C786211ED4E0E60077C1D2 /* GenericModels.swift in Sources */,
+				38C786211ED4E0E60077C1D2 /* GenericModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,13 +560,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38516A8A1F0786D30001F3A6 /* OfflineData.swift in Sources */,
 				38FE57881ECDF73100ED2814 /* Protocols.swift in Sources */,
 				38FE57861ECDF72B00ED2814 /* Credentials.swift in Sources */,
 				38FE578A1ECDF73A00ED2814 /* PersonalCredentials.swift in Sources */,
+				38C32B281F057CBA00387CE9 /* ToneAnalysisModel.swift in Sources */,
 				38FE57761ECCAEC200ED2814 /* ToneAnalyzerUITests.swift in Sources */,
-				38E456971ED2BCB7003952F3 /* ToneAnalysisModel.swift in Sources */,
-				38C7861E1ED4D7160077C1D2 /* ToneAnalysisInterface.swift in Sources */,
-				38C786221ED4E0E60077C1D2 /* GenericModels.swift in Sources */,
+				38C786221ED4E0E60077C1D2 /* GenericModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,6 +777,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 36J4LY89P8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "iOS-ApplicationUITests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -737,6 +795,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 36J4LY89P8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "iOS-ApplicationUITests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

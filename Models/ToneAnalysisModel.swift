@@ -10,8 +10,6 @@ import Foundation
 import ToneAnalyzerV3
 import RestKit
 
-// MARK: - Public Interface
-
 public typealias DocumentTone = [String: [NameScore]]
 
 /** A model that holds the results of performing tone analysis on a document. */
@@ -19,25 +17,6 @@ public struct ToneAnalysisModel {
     
     // Tone analysis results of the entire document's text.
     fileprivate let analysis: DocumentTone
-    
-    public init(with toneAnalysis: ToneAnalysis) {
-        analysis = ToneAnalysisModelHelper.decode(using: toneAnalysis)
-    }
-
-}
-
-// MARK: - Private implementation
-
-fileprivate struct ToneAnalysisModelHelper {
-    
-     fileprivate static func decode(using toneAnalysis: ToneAnalysis) -> DocumentTone {
-        
-        //TODO: here we need to decode ToneAnalysis into a DocumentTone
-        let documentTone = DocumentTone()
-        
-        return documentTone
-    }
-
     
 }
 
@@ -69,6 +48,28 @@ extension ToneCategory: JSONEncodable {
     }
 }
 
+extension ToneAnalysis: JSONEncodable {
+    
+    /// Used to serialize this model to JSON.
+    public func toJSONObject() -> Any {
+        var json = [String: Any]()
+        json["document_tone"] = documentTone.map { $0.toJSONObject() }
+        if let sentencesTones=sentencesTones {
+            json["sentences_tone"] = sentencesTones.map { $0.toJSONObject() }
+        }
+        return json
+    }
+
+    // Fix an issue with the IBM SDK initializer that prevents from casting the JSON object
+    // ORIGINAL: documentTone = try json.decodedArray(at: "document_tone", "tone_categories", type: ToneCategory.self)
+    // MODIFIED: documentTone = try json.decodedArray(at: "document_tone", type: ToneCategory.self)
+    public init(json: JSON) throws {
+        documentTone = try json.decodedArray(at: "document_tone", type: ToneCategory.self)
+        sentencesTones = try? json.decodedArray(at: "sentences_tone", type: SentenceAnalysis.self)
+    }
+
+}
+
 extension SentenceAnalysis: JSONEncodable {
     
     /// Used to serialize this model to JSON.
@@ -79,19 +80,6 @@ extension SentenceAnalysis: JSONEncodable {
         json["input_to"] = inputTo
         json["text"] = text
         json["tone_categories"] = toneCategories.map { $0.toJSONObject() }
-        return json
-    }
-}
-
-extension ToneAnalysis: JSONEncodable {
-    
-    /// Used to serialize this model to JSON.
-    public func toJSONObject() -> Any {
-        var json = [String: Any]()
-        json["documentTone"] = documentTone.map { $0.toJSONObject() }
-        if let sentencesTones=sentencesTones {
-            json["sentencesTones"] = sentencesTones.map { $0.toJSONObject() }
-        }
         return json
     }
 }

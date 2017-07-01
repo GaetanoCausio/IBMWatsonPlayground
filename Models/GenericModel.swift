@@ -11,11 +11,10 @@ import Foundation
 /** The score given a name and an amount. May be used by serveral services */
 public struct NameScore {
     
-    /// The name of this particular tone.
+    /// The name of this particular item.
     public let name: String
     
-    /// The raw score of the tone, computed by the algorithms. This can be
-    /// compared to other raw scores and used to build your own normalizations.
+    /// The raw score of this item, computed by the algorithms. 
     public let score: Double
     
 }
