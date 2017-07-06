@@ -89,13 +89,13 @@ class ToneAnalyzerTests: XCTestCase {
     func testToneAnalyzerModelFunctions() {
         
         // test ToneScore offline data
-        if let json = try? JSON(string: jsonStringToneScore) {
+        if let json = try? JSON(string: ToneAnalysisOfflineService.jsonStringToneScore) {
             if let toneScore = try? ToneScore(json: json) {
                 XCTAssert(toneScore.id == "anger")
                 XCTAssert(toneScore.name == "Anger")
                 XCTAssert(toneScore.score == 0.069519)
                 let jsonString = try? toneScore.toJSON().serializeString()
-                XCTAssert(jsonString == jsonStringToneScore)
+                XCTAssert(jsonString == ToneAnalysisOfflineService.jsonStringToneScore)
             } else {
                 XCTFail("Unable to cast JSON to ToneScore")
             }
@@ -104,7 +104,7 @@ class ToneAnalyzerTests: XCTestCase {
         }
 
         // test ToneCategory offline data
-        if let json = try? JSON(string: jsonStringToneCategory) {
+        if let json = try? JSON(string: ToneAnalysisOfflineService.jsonStringToneCategory) {
             if let toneCategory = try? ToneCategory(json: json) {
                 XCTAssert(toneCategory.categoryID == "emotion_tone")
                 XCTAssert(toneCategory.name == "Emotion Tone")
@@ -112,7 +112,7 @@ class ToneAnalyzerTests: XCTestCase {
                 XCTAssert(toneCategory.tones[3].id == "joy")
                 XCTAssert(toneCategory.tones[1].name == "Disgust")
                 let jsonString = try? toneCategory.toJSON().serializeString()
-                XCTAssert(jsonString == jsonStringToneCategory)
+                XCTAssert(jsonString == ToneAnalysisOfflineService.jsonStringToneCategory)
             } else {
                 XCTFail("Unable to cast JSON to ToneCategory")
             }
@@ -121,7 +121,7 @@ class ToneAnalyzerTests: XCTestCase {
         }
 
         // test SentenceAnalysis offline data
-        if let json = try? JSON(string: jsonStringSentenceAnalysis) {
+        if let json = try? JSON(string: ToneAnalysisOfflineService.jsonStringSentenceAnalysis) {
             if let sentenceAnalysis = try? SentenceAnalysis(json: json) {
                 XCTAssert(sentenceAnalysis.toneCategories.count == 3)
                 XCTAssert(sentenceAnalysis.inputTo == 31)
@@ -142,7 +142,7 @@ class ToneAnalyzerTests: XCTestCase {
         }
 
         // test ToneAnalysis offline data
-        if let json = try? JSON(string: jsonStringToneAnalysis) {
+        if let json = try? JSON(string: ToneAnalysisOfflineService.jsonStringToneAnalysis) {
             if let toneAnalysis = try? ToneAnalysis(json: json) {
                 XCTAssert(toneAnalysis.documentTone.count == 3)
                 XCTAssert(toneAnalysis.documentTone[1].name == "Language Tone")
@@ -165,5 +165,73 @@ class ToneAnalyzerTests: XCTestCase {
         
     }
     
+    func testToneAnalysisOfflineService() {
+        
+        if let toneAnalysisOfflineService = ToneAnalysisOfflineService() {
+        
+            var expectation = self.expectation(description: "Test offline tone analizer service with offline data.")
+            
+            // test of a positive response
+            toneAnalysisOfflineService.toneAnalisys(forText: text, failure: failWithError, success: { tones in
+                
+                XCTAssert(tones.documentTone.count == 3)
+                XCTAssert(tones.documentTone[1].name == "Language Tone")
+                XCTAssert(tones.documentTone[0].tones.count == 5)
+                XCTAssert(tones.documentTone[0].tones[4].id == "sadness")
+                if let sentencesTones = tones.sentencesTones {
+                    XCTAssert(sentencesTones.count == 4)
+                    XCTAssert(sentencesTones[2].text == "We have a competitive data analytics product suite in the industry.")
+                    XCTAssert(sentencesTones[1].toneCategories.count == 3)
+                    XCTAssert(sentencesTones[1].toneCategories[0].categoryID == "emotion_tone")
+                }
+                
+                expectation.fulfill()
+            })
+            
+            waitForExpectations()
+
+            expectation = self.expectation(description: "Test offline tone analizer service for a failure response.")
+            
+            // test of a negative response
+            toneAnalysisOfflineService.toneAnalisys(forText: "invalidresponse",
+                failure: { error in
+                    if let toneError = (error as? ToneAnalysisError), case .unableToParseJSON = toneError {
+                        XCTAssert(true)
+                    } else {
+                        XCTFail("Returncode returned from service is not correct.")
+                    }
+                    expectation.fulfill()
+            
+            },
+                success: { tones in
+                    XCTFail("This test should fail, therfore a success is not expected.")
+                    expectation.fulfill()
+            })
+            
+            waitForExpectations()
+            
+        } else {
+            
+            XCTFail("Failed to initialize ToneAnalysisOfflineService.")
+        }
+
+    }
+    
+    func testToneAnalysisServices() {
+        
+        // Test Offline Service
+        
+        let toneAnalysisServiceOffline = ToneAnalysisService(service: ToneAnalysisOfflineService())
+        
+        XCTAssert(toneAnalysisServiceOffline != nil)
+        
+        // Test IBM Watson Service
+        
+        let toneAnalysisServiceIBMWatson = ToneAnalysisService(service: ToneAnalysisIBMService())
+        
+        XCTAssert(toneAnalysisServiceIBMWatson != nil)
+        
+        
+    }
     
 }

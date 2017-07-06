@@ -1,5 +1,5 @@
 //
-//  ToneAnalyzerModel.swift
+//  ToneAnalysisModel.swift
 //  IBMWatsonPlayground
 //
 //  Created by Gaetano Causio on 22/05/2017.
@@ -10,15 +10,21 @@ import Foundation
 import ToneAnalyzerV3
 import RestKit
 
-public typealias DocumentTone = [String: [NameScore]]
+public typealias DocumentTone = [String: [ItemScore]]
+
 
 /** A model that holds the results of performing tone analysis on a document. */
 public struct ToneAnalysisModel {
-    
-    // Tone analysis results of the entire document's text.
-    fileprivate let analysis: DocumentTone
-    
+
+    private let analisysResults: DocumentTone
+
+    init(_ toneAnalysis:ToneAnalysis) {
+        
+        // TODO: mapping to DocumentTone
+        analisysResults = DocumentTone()
+    }
 }
+
 
 // MARK: - Watson Model Extensions
 

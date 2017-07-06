@@ -9,7 +9,7 @@
 import Foundation
 
 /** The score given a name and an amount. May be used by serveral services */
-public struct NameScore {
+public struct ItemScore {
     
     /// The name of this particular item.
     public let name: String
